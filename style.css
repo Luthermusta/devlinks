@@ -169,3 +169,19 @@ footer {
     text-align: center;
     font-size: 14px;
 }
+
+/*media quories*/
+@media(main-width:700px){
+
+:Root{
+
+--bg-url:url(./assets/bg-desktop.jpg);    
+
+}    
+
+.light{
+    --bg-url:url(./assets/bg-desktop-light.jpg);
+
+}
+
+}
