@@ -6,23 +6,23 @@
 
 :root {
 
-    ---text-color: white;
+    --text-color: white;
     --bg-url: url(./assets/bg-mobile.jpg);
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.1);
     --surface-color-hover: rgba(255, 255, 255, 0.05);
     --highlight-color: rgba(255, 255, 255, 0.2);
-    --switch-bg-url: (./assets/Moon-stars.svg);
+    --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
 .light {
     --text-color: black;
     --bg-url: url(./assets/bg-mobile-light.jpg);
-    --stroke-color: rgba(0, 0, 0, 0.5);
-    --surface-color: rgba(0, 0, 0.05);
+    --stroke-color: rgba(0, 0, 0, 0.05);
+    --surface-color: rgba(0, 0, 0, 0.5);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
     --highlight-color: rgba(0, 0, 0, 0.1);
-    --switch-bg-url: (./assets/suns.svg);
+    --switch-bg-url: url(./assets/sun.svg);
 }
 
 body {
@@ -40,7 +40,7 @@ body * {
     width: 100%;
     max-width: 588px;
     margin: 56px auto 0px;
-    padding: 0 24px;
+    padding: 24px o;
 }
 
 /*profile*/
@@ -63,48 +63,51 @@ body * {
 }
 
 /*swith*/
+
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg-url) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    left: 0;
+    transform: translateY(-50%);
+    animation: slide-back 0.2s;
+
+}
+
 #switch {
     position: relative;
     width: 64px;
     margin: 4px auto;
 }
 
-#swith button {
-    width: 32px;
-    height: 32px;
-    background: white var(--switch-bg-url) no-repeat/center;
-    border: 0;
-    border-radius: 50%;
-    
-
-    position: absolute;
-    top:50%;
-    left: 0;
-    z-index: 1;
-    transform: translateY(-50%);
-
-    animation: slide-back 0.2s;
-
-}
-
-.light #switch button {
-    animation: slide-in 0.2s forwards;
-  }
-
-  #switch button:hover {
-    outline: 8px solid var(--highlight-color);
-  }
 
 #switch span {
     display: block;
     width: 64px;
     height: 24px;
     background: var(--surface-color);
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--stroke-color);
     backdrop-filter: blur(4px);
-    --webkit-backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     border-radius: 9999px;
+
 }
+
+.light #switch button {
+    right: 0;
+    left: initial;
+    animation: slide-in 0.4s forwards;
+}
+
+#switch button:hover {
+    outline: 8px solid var(--highlight-color);
+}
+
 
 
 /*links*/
@@ -124,8 +127,8 @@ ul li a {
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    background-color: var(--stroke-color);
-    border: 1px solid var(--surface-color);
+    background-color: var(--surface-color);
+    border: 1px solid var(--stroke-color);
     backdrop-filter: blur(4px);
     --webkit-backdrop-filter: blur(4px);
 
@@ -171,17 +174,39 @@ footer {
 }
 
 /*media quories*/
-@media(main-width:700px){
+@media(main-width:700px) {
 
-:Root{
+    :Root {
 
---bg-url:url(./assets/bg-desktop.jpg);    
+        --bg-url: url(./assets/bg-mobile.jpg);
 
-}    
+    }
 
-.light{
-    --bg-url:url(./assets/bg-desktop-light.jpg);
+    .light {
+        --bg-url: url(./assets/bg-mobile-light.jpg);
+
+    }
 
 }
 
+/*animation*/
+@keyframes slide-in {
+    From {
+        left: 0;
+    }
+
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-back {
+
+    From {
+        left: 50%;
+    }
+
+    to {
+        left: 0;
+    }
 }
