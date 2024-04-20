@@ -1,23 +1,18 @@
 function toggleMode() {
-
 const html= document.documentElement
-const img= document.queryselector("#profile img")
+html.classList.toggle("light")
 
-if(ReportBody.classlist.contains('light')){
-    html.classLight.remove
-    img.setAtribute("src" ./assets/avatar-light.png")
+//pegar a tag img
+const img= document.querySelector("profile img")
+ // substituir a imagem
+if(html.classList.contains('light')){
+ //se tiver sem light mode ,adicionar a imagem light
+ img.setAttribute("src", "./assets/Avatar-light.png")
 
+}else{
+ //se tiver no modo normal, mantem a imagem normal
+    img.setAttribute("src","./assets/Avatar.png")
 }
 
-else{
-  
-    html.classLight.add('light')
-img.setAtribute("src" "./assets/avatar.png")
 }
-
-}
-
-const img= document.queryselector("#profile img")
-
-
 

@@ -1,11 +1,10 @@
-# Luther-Loren-o
-e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
+<h1 align="center"> Devlinks</h1>
+
+<p align="center">programa
+Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
 </p>
 
-<p align="center"><h1 align="center"> Devlinks</h1>
-
 <p align="center">
-Evento exclusivo 
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -17,10 +16,10 @@ Evento exclusivo
 </p>
 
 <br>
-
 <p align="center">
-  <img alt="Projecto Devlinks" src=".github/preview.jpg" width="100%">
+  <img alt= "projecto Devlinks" src=".github/preview.jpg" width="100%">
 </p>
+
 
 ## 🚀 Tecnologias
 
@@ -32,7 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Figma
 ## 💻 Projeto
 
-O projecto Devlinks nos ajuda a desenvlover os nossos conhecimentos em programação
+o projecto Devlinks nos ajuda a desenvolver conhecimento em programação.
 
 ## 🔖 Layout
 
